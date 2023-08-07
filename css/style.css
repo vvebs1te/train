@@ -284,6 +284,12 @@ h2{
     .nav{
         display: none;
     }
+    #main{
+        width: 90%;
+    }
+    #twitter{
+        width: 80%;
+    }
     #member{
         width: 80%;
         padding: 70px 0;
