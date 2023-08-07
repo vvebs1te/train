@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    line-height: 26px;
+    background: url(../image/bg.jpg) no-repeat center center fixed;
+}
+.br_768{
+    display: none;
+}
+
+/*띠*/
+.marquee, .marquee2{
+    border-top: 3px solid #e66e26 ;
+    border-bottom: 3px solid #e66e26 ;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 34px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0;
+}
+.marquee div{
+    width: 200%;
+    height: 34px;
+    background: url(../image/main_marquee_txt.png) repeat-x;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee{
+    0%{left: 0;}
+    100%{left: -100%;}
+}
+.marquee2 div{
+    width: 200%;
+    height: 34px;
+    background: url(../image/main_marquee_txt.png) repeat-x;
+    position: absolute;
+    animation: marquee2 20s linear infinite;
+}
+@keyframes marquee2{
+    0%{right: 0;}
+    100%{right: -100%;}
+}
+.marquee2{
+    clear: both;
+}
+
+
+
+/*헤더*/
+#header{
+    z-index: 99;
+    margin: 50px auto;
+}
+.nav{
+    width: 1400px;
+    margin: auto;
+}
+.nav li{
+    float: left;
+    width: 18%;
+    margin-top: 2.5%;
+    text-align: center;
+}
+.nav li:nth-child(1){
+    width: 28%;
+    margin-top: 0;
+}
+.nav li a{
+    font-size: 25px;
+    display: block;
+    color: #fff;
+}
+.nav li a:hover{
+    font-weight: 900;
+    color: #e66e26;
+}
+.nav li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.logo img{
+    max-width: 100%;
+}
+.m_nav{
+    display: none;
+}
+
+/*메인배너*/
+#main{
+    width: 1000px;
+    margin: auto;
+}
+.swiper-slide a:nth-child(2){
+    display: none;
+}
+.slide a{
+    display: block;
+    width: 100%;
+}
+
+/*트위터*/
+#twitter{
+    width: 700px;
+    margin: 100px auto 200px;
+}
+
+/*본문*/
+.body{
+    clear: both;
+    width: 1000px;
+    margin: auto;
+    padding: 100px 0 50px;
+    color: #fff;
+    text-align: center;
+}
+h1{
+    color: #e66e26;
+    font-size: 30px;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+p{
+    margin-bottom: 20px;
+}
+hr{
+    margin: 30px 0;
+}
+h2{
+    color: #e66e26;
+    font-size: 20px;
+    margin: 50px 0 20px;
+}
+
+#member{
+    width: 1400px;
+    margin: auto;
+    padding: 100px 0;
+    clear: both;
+}
+.member li{
+    float: left;
+    width: 23%;
+    margin: 0 1% 2%;
+}
+.member li a img{
+    display: block;
+    max-width: 100%;
+}
+.member li:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.member li:last-child{
+    margin-bottom: 150px;
+}
+
+.form{
+    display: block;
+    margin: 0 auto 100px;
+    width: 700px;
+    max-width: 100%;
+}
+.img{
+    display: block;
+    margin: auto;
+    width: 700px;
+    max-width: 100%;
+}
+
+@media (max-width: 1920px){
+    .marquee, .marquee2{
+        margin: 30px 0;
+    }
+    .marquee div{
+        animation: marquee 15s linear infinite;
+    }
+    .marquee2 div{
+        animation: marquee2 15s linear infinite;
+    }
+    #body{
+        margin: 70px auto;
+    }
+    .slide .swiper-slide{
+        margin: 50px auto 0;
+    }
+    #twitter{
+        margin: 70px auto 150px;
+    }
+}
+
+@media (max-width: 1536px){
+    .marquee, .marquee2{
+        margin: 15px 0;
+    }
+    .nav{
+        width: 1000px;
+    }
+    .nav li a{
+        font-size: 23px;
+    }
+    #main{
+        width: 800px;
+    }
+    #twitter{
+        width: 500px;
+        margin: 50px auto 100px;
+    }
+    .body{
+        width: 700px;
+    }
+    #member{
+        width: 700px;
+    }
+    .form{
+        width: 500px;
+    }
+    .img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1280px){
+    .marquee, .marquee2{
+        height: 30px;
+        padding: 3px 0 8px;
+    }
+    .marquee div{
+        animation: marquee 13s linear infinite;
+    }
+    .marquee2 div{
+        animation: marquee2 13s linear infinite;
+    }
+    .nav{
+        width: 95%;
+    }
+    #main{
+        width: 80%;
+    }
+    #twitter{
+        width: 60%;
+        margin: 50px auto;
+    }
+    .body{
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px){
+    .br_768{
+        display: block;
+    }
+    .marquee, .marquee div{
+        display: none;
+    }
+    .body{
+        padding: 50px 0;
+    }
+    .marquee2 div{
+        animation: marquee2 7s linear infinite;
+    }
+    .swiper-slide a:nth-child(1){
+        display: none;
+    }
+    .swiper-slide a:nth-child(2){
+        display: block;
+    }
+    .m_nav{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    #member{
+        width: 80%;
+        padding: 70px 0;
+    }
+    .member li{
+        width: 40%;
+        margin: 0 5% 10%;
+    }
+    .member li:last-child{
+        margin-bottom: 50px;
+    }
+}

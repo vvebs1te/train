@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./image/favicon.png" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
+    <title>행열</title>
+    <link href="css/load.css" rel="stylesheet" type="text/css"><!--로딩페이지 수정o-->
+    <link href="css/swiper.css" rel="stylesheet" type="text/css"><!--메인베너 슬라이드 수정X -->
+	<link href="css/slidebanner.css" rel="stylesheet" type="text/css"><!--메인베너 슬라이드 수정o-->
+	<link href="css/m_nav.css" rel="stylesheet" type="text/css"><!--모바일 메뉴 수정o-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="loader">
+        <p>스크린 도어가<br class="br_768"> 열립니다.</p>
+        <p>발빠짐 주의,<br class="br_768"> 발빠짐 주의.</p>
+    </div>
+
+    <div class="marquee"><!--띠-->
+        <div></div>
+    </div><!--띠-->
+
+    <div id="body"><!--전체-->
+        <div id="header"><!--헤더-->
+            <ul class="nav">
+                <li><a href="#none" class="logo"><img src="./image/logo.png" alt=""></a></li>
+                <li><a href="./no1.html">공지사항</a></li>
+                <li><a href="./no2.html">스토리</a></li>
+                <li><a href="https://docs.google.com/document/d/1sfJl7ZLy9d5TpDW6OhcU6Mmn4ZTUfzikug5KMw-GyCY/edit?usp=sharing" target="_blank">신청서양식</a></li>
+                <li><a href="#none" onclick="alert('관계자 외 출입금지')">탑승객</a></li>
+            </ul>
+            <div class="m_nav scroll-menu">
+                <a href="#none" class="m_logo"><img src="./image/logo.png" alt=""></a>
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="./no1.html">공지사항</a></li>
+                        <li><a href="./no2.html">스토리</a></li>
+                        <li><a href="https://docs.google.com/document/d/1sfJl7ZLy9d5TpDW6OhcU6Mmn4ZTUfzikug5KMw-GyCY/edit?usp=sharing" target="_blank">신청서양식</a></li>
+                        <li><a href="#none" onclick="alert('관계자 외 출입금지')">탑승객</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--헤더-->
+
+        <div id="main"><!--메인-->
+            <div class="swiper-container slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./image/banner1.png" alt="일정표"></a>
+                        <a href="#none"><img src="./image/m_banner1.png" alt="일정표"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://docs.google.com/document/d/13sQHtFokHVguAmUu0c7N5WhGBM5U4xFhTY9BJc9Zd1o/edit?usp=sharing" target="_blank"><img src="./image/banner2.png" alt="QnA"></a>
+                        <a href="https://docs.google.com/document/d/13sQHtFokHVguAmUu0c7N5WhGBM5U4xFhTY9BJc9Zd1o/edit?usp=sharing" target="_blank"><img src="./image/m_banner2.png" alt="QnA"></a>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <a href="https://docs.google.com/spreadsheets/d/1OqbZybE_DUpL2xpJ8uERPFKVKCNQtfcdA3DwjhAg-MA/edit?usp=sharing"><img src="./image/banner1.png" alt="접수현황"></a>
+                        <a href="https://docs.google.com/spreadsheets/d/1OqbZybE_DUpL2xpJ8uERPFKVKCNQtfcdA3DwjhAg-MA/edit?usp=sharing"><img src="./image/m_banner1.png" alt="접수현황"></a>
+                    </div> -->
+                </div>
+                <!-- 블릿 버튼 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!--메인-->
+
+        <div id="twitter">
+            <a class="twitter-timeline" data-width="700" data-height="500" data-dnt="true" data-theme="dark" href="https://twitter.com/nonetrain?ref_src=twsrc%5Etfw">Tweets by nonetrain</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div><!--전체-->
+
+    <div class="marquee2"><!--띠-->
+        <div></div>
+    </div><!--띠-->
+
+    <!--제이쿼리 연결-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--제이쿼리 연결-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!--로딩페이지 연결-->
+	<script src="./js/load.js"></script><!--로딩페이지 수정o-->
+	<script src="./js/swiper.min.js"></script><!--메인베너 슬라이드 수정X-->
+	<script src="./js/slidebanner.js"></script><!--메인베너 슬라이드 수정o-->
+</body>
+</html>
